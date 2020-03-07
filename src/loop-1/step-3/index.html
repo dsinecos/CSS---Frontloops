@@ -33,6 +33,9 @@
 <!-- 4. Position the container such that the handles appear in the same line as the Total invoice amount -->
 <!-- 5. Adjust the height, absolute positioning and image cropping for different screen sizes -->
 
+<!-- Learnt from FrontLoops Solution -->
+<!-- When positioning background images as absolute, make sure to give them an explicit width or they'll collapse. Alternatively, you can assign `left: 0;` and `right: 0` against the absolutely positioned background to take the width of the relatively positioned parent -->
+
 <body>
   <div class="flex flex-row justify-center items-center h-screen bg-teal-600">
     <div class="bg-gray-100 py-8 rounded overflow-visible">

@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.user-icon:hover {
+  box-shadow: 0 0 0 3px #CBD5E0;
+}
+
+.crop-image {
+  object-position: 0 25%;
+}
+
+.image-position {
+  position: absolute;
+  top: -2rem;
+  z-index: 0;
+}

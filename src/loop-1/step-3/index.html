@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontloops Loop 1 Step 3</title>
+  <link rel="stylesheet" href="../../../build/output.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<!-- COMPLETED - Insert and position Image -->
+<!-- COMPLETED - Make the Image responsive -->
+<!-- COMPLETED - Make the layout responsive -->
+<!-- COMPLETED - Add hover effect to User Icon (Using Box Shadow) -->
+<!-- TODO - Center the box on the screen -->
+
+<!-- Working with Positioning -->
+<!-- COMPLETED - How do top, bottom, right and left work in absolute positioning? -->
+
+<!-- Vertical centering with absolute positioning -->
+<!-- TO-UNDERSTAND - How to vertically center a div element that contains another absolutely positioned div element inside using flexbox' items-center? -->
+
+<!-- Working with Images -->
+<!-- TO-UNDERSTAND - How are images sized by default? How is the sizing affected by whether they are within a block, inline or an inline-block element? -->
+<!-- COMPLETED - How to size images relative to the size of the parent element? -->
+<!-- COMPLETED - How to position (crop) images inside the parent element?-->
+
+<!-- Steps -->
+<!-- 1. Ensure that the image takes the width of the outside container -->
+<!-- 2. Resize the container height to crop out the bottom half of the wheels -->
+<!-- 3. Crop the image inside the container such that the empty section at the top of the image is eliminated -->
+<!-- 4. Position the container such that the handles appear in the same line as the Total invoice amount -->
+<!-- 5. Adjust the height, absolute positioning and image cropping for different screen sizes -->
+
+<body>
+  <div class="flex flex-row justify-center items-center h-screen bg-teal-600">
+    <div class="bg-gray-100 py-8 rounded overflow-visible">
+      <div class="px-8 sm:px-16 relative z-10">
+        <div class="flex flex-row justify-between items-center mb-2">
+          <div class="font-bold text-xl text-gray-900">SimpleWheels</div>
+            <div class="rounded-full bg-gray-100 p-2 border-2 border-gray-300 cursor-pointer user-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4 fill-current text-gray-900"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7 6v2a3 3 0 1 0 6 0V6a3 3 0 1 0-6 0zm-3.65 8.44a8 8 0 0 0 13.3 0 15.94 15.94 0 0 0-13.3 0z"/></svg>
+            </div>
+        </div>
+        <div class="mb-8">
+          <p class="text-xs text-gray-600">
+            Thanks for your order #2357654, your package will be on it's way shortly.
+          </p>
+        </div>
+        <div class="flex flex-row justify-between mb-4">
+          <div class="text-sm text-gray-800">
+            Chapelli Vintage Single Speed
+          </div>
+          <div class="font-bold text-gray-900">
+            $317
+          </div>
+        </div>
+        <div class="flex flex-row justify-between mb-4">
+          <div class="text-sm text-gray-800">
+            Castelli Arenberg Gel Gloves
+          </div>
+          <div class="font-bold text-gray-900">
+            $39
+          </div>
+        </div>
+        <div class="flex flex-row justify-between mb-4">
+          <div class="uppercase text-gray-700 font-bold">
+            Total
+          </div>
+          <div class="font-bold text-gray-900">
+            $356
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row justify-center bg-gray-100 relative">
+        <img class="h-40 sm:h-48 w-full object-cover crop-image image-position rounded bg-gray-100 " src="./images/bicycle.png" alt="Bicycle-Image">
+        <!-- <div class="h-40 sm:h-56 w-full top-0 absolute rounded bg-green-300 opacity-25 crop-image"></div> -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

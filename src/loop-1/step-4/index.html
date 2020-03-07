@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrontLoops - Loop 1, Step 4</title>
+  <link rel="stylesheet" href="../../../build/output.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="w-full h-screen flex flex-row justify-center items-center bg-blue-400 text-gray-900">
+    <div class="messenger bg-gray-200 shadow-lg">
+      <div class="flex flex-row justify-between items-center p-4 bg-blue-700 text-gray-100">
+        <div class="flex flex-row items-center">
+          <div class="w-2 h-2 rounded-full bg-gray-100">
+          </div>
+          <div class="ml-4">
+            <p class="uppercase tracking-wider font-medium">Mark Zuckerberg</p>
+          </div>
+        </div>
+        <div class="transform text-gray-300 hover:scale-125 hover:text-white transition-transform duration-150 ease-in">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="w-4 h-4 fill-current">
+            <path
+              d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+          </svg>
+        </div>
+      </div>
+      <div class="p-4">
+        <div>
+          <div class="flex flex-col -mt-3">
+            <div class="transform translate-y-3 self-center bg-gray-200 px-4">
+              <p class="text-gray-500 text-center">Today</p>
+            </div>
+            <div class="border border-solid border-2 border-gray-400">
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <div>
+            <div>
+              <p class="text-xs text-gray-600">10:53</p>
+            </div>
+            <div class="relative bg-blue-200 w-3/4 mt-1 p-2 rounded-sm message-box">
+              <p class="text-sm">
+                Hi, Mark! I made a new design for the Messenger App.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-end mt-4">
+            <div>
+              <p class="text-xs text-gray-600">10:53</p>
+            </div>
+            <div class="relative bg-green-200 w-3/4 mt-1 p-2 rounded-sm message-box__right">
+              <p class="text-sm">
+                Yo! Send it to my assistant and we'll review it during the year
+              </p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div>
+              <p class="text-xs text-gray-600">10:53</p>
+            </div>
+            <div class="relative inline-block bg-blue-200 mt-1 p-2 rounded-sm message-box">
+              <p class="text-sm">
+                But Mark...
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-end mt-8">
+            <div class="bg-pink-300 p-2 rounded-md">
+              <p class="text-sm">You were blocked by the user</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="flex flex-row justify-between border-solid border-t-2 border-gray-400 mt-8 pt-2">
+          <input class="block w-full py-2 bg-gray-200 rounded-md focus:outline-none focus:bg-gray-100 " type="text" placeholder="Enter your message">
+          <button class="block px-2 focus:outline-none uppercase font-medium tracking-wider text-blue-700">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<style>
+  /* * {
+    outline: 1px solid red;
+  } */
+
+  .messenger {
+    max-width: 24rem;
+  }
+
+  .message-box::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #BEE3F8 transparent transparent transparent;
+  }
+
+  .message-box__right::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    margin-right: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #C6F6D5 transparent transparent transparent;
+  }
+</style>
+
+</html>

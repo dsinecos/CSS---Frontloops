@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontloops Loop 1 - Step 5</title>
+  <link rel="stylesheet" href="../../../build/output.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="h-screen w-full flex flex-row justify-center items-center background bg-cover bg-bottom text-gray-800">
+    <div class="p-8 bg-gray-100 boarding-pass rounded-md">
+      <div class="boarding-pass__destination-details flex flex-row justify-between items-center">
+        <div>
+          <div>
+            <p class="text-6xl leading-none tracking-tighter text-blue-600 font-bold">FRA</p>
+          </div>
+          <div class="ml-1">
+            <p class="text-gray-700">Frankfurt</p>
+          </div>
+        </div>
+        <div>
+         <div class="w-8 h-1 bg-blue-200 rounded-sm">
+
+         </div>
+        </div>
+        <div>
+          <div>
+            <p class="text-6xl leading-none tracking-tighter text-blue-600 font-bold">AMS</p>
+          </div>
+          <div>
+            <p class="text-gray-700">Amsterdam</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="boarding-pass__flight-details mt-12 flex flex-row">
+        <div class="w-full">
+          <p class="text-xs font-medium text-gray-500 uppercase">Flight</p>
+          <p class="font-medium">815</p>
+        </div>
+        <div class="w-full">
+          <p class="text-xs font-medium text-gray-500 uppercase">Gate</p>
+          <p class="font-medium">23G</p>
+        </div>
+        <div class="w-full">
+          <p class="text-xs font-medium text-gray-500 uppercase">Seat</p>
+          <p class="font-medium">10F</p>
+        </div>
+      </div>
+
+      <div class="flex flex-row mt-4 boarding-pass__passenger-details">
+        <div class="w-full">
+          <div>
+            <p class="text-xs font-medium text-gray-500 uppercase">Passenger</p>
+            <p class="font-medium">Robert De Niro</p>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs font-medium text-gray-500 uppercase">Class</p>
+            <p class="font-medium">Business</p>
+          </div>
+          <div class="mt-4">
+            <p class="text-xs font-medium text-gray-500 uppercase">Departure</p>
+            <p class="font-medium">3:45am, Dec 15</p>
+          </div>
+        </div>
+        <div class="w-full ml-12">
+          <img src="/src/loop-1/step-5/images/qr.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<style>
+  .background {
+    background-image: url('images/background.jpg');
+  }
+
+  .boarding-pass {
+    min-width: 24rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "dest dest"
+                         "fl fl"
+                         "pgr pgr"
+  }
+
+  .boarding-pass__destination-details {
+    grid-area: dest;
+  }
+
+  .boarding-pass__flight-details {
+    grid-area: fl;
+  }
+
+  .boarding-pass__passenger-details {
+    grid-area: pgr;
+  }
+</style>
+
+</html>
